@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crie seu evento</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Poppins&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <header>
+        <h1>Crie e compartilhe <br/>seu evento.</h1>
+        <p>O primeiro passo, é preencher esse <br/>formulário de inscrição.</p>
+    </header>
+    <form>
+        <div id="alinhamentoforms">
+            <div id="primeiroform">
+                <h2>Informações do Evento</h2>
+                <div class="line"></div>
+
+                <label for="titulo">Título do Evento<span>(mínimo 8 caracteres)</span></label><br/>
+                <input type="text" name="titulo" id="titulo"><br/>
+
+                <label for="link">Link do evento<span>(comece com https://)</span></label><br/>
+                <input type="text" name="link" id="link"><br/>
+
+                <label for="whatsapp">Whatsapp para contato<span>(somente números)</span></label><br/>
+                <input type="text" name="whatsapp" id="whatsapp"><br/>
+
+                <label for="infosextras">Informações extras</label><br/>
+                <input type="text" name="infosextras" id="infosextras"><br/>
+
+                <label for="categoria">Categoria</label><br/>
+                <select name="categoria" id="categoria">
+                    <option value="">Tipo do evento</option>
+                    <option value="Festa">Festa</option>
+                    <option value="Baile">Baile</option>
+                </select>
+            </div>
+
+            <div id="segundoform">
+
+                <h2>Privacidade</h2>
+                <div class="line"></div>
+
+                <label for="email">E-mail do administrador<span>(digite um email válido)</span></label><br/>
+                <input type="email" name="email" id="email"><br/>
+
+                <label for="senha">Senha de acesso para os participantes<span>(mínimo 8 caracteres)</span></label><br/>
+                <input type="password" name="senha" id="senha"><br/>
+
+                <div id="check">
+                    <input type="checkbox" name="checkbox" id="checkbox" checked>
+                    <label for="checkbox">Evento privado</label>
+                </div>
+                
+            </div>
+
+            <div id="terceiraform">
+                <h2>Dia e hora</h2>
+                <div class="line"></div>
+
+                <div id="datas">
+                    <div class="date">
+                        <label for="data">Data</label><br/>
+                        <input type="date" name="data" id="data">
+                    </div>
+                    <div class="date">
+                        <label for="das">Das</label><br/>
+                        <input type="time" name="das" id="das">
+                    </div>
+                    <div class="date">
+                        <label for="ate">Até</label><br/>
+                        <input type="time" name="ate" id="ate">
+                    </div>
+                </div>
+            </div>
+            <div class="separador"></div>
+            <div class="box">
+                <div id="botao">
+                    <button>Salvar evento</button>
+                </div>
+            </div>  
+        </div>  
+        
+    </form>
+    
+</body>
+</html>
